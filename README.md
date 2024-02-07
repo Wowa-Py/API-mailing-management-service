@@ -17,6 +17,7 @@ https://github.com/Wowa-Py/API-mailing-management-service.git
 
 **Перейдите в директорию проекта:**
 cd service
+
 cd maillind
 
 **Создайте файл .env в корневой директории проекта и укажите необходимые переменные окружения:**
