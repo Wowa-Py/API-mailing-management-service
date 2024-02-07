@@ -32,6 +32,14 @@ DB_HOST=db
 
 DB_PORT=5432
 
+
+**Перейдите в директорию проекта:**
+
+cd service
+
+cd maillind
+
+
 **Запустите проект с помощью Docker Compose:**
 
 docker-compose up -d --build
@@ -56,24 +64,6 @@ http://127.0.0.1:8000/docs/
 
 docker-compose down
 
-
-**Запуск локально:**
-**Перейдите в директорию проекта:**
-
-cd service
-
-cd maillind
-
-
-Введите команду в терминале:
-
-python3 manage.py runserver
-
-(либо: py manage.py runserver)
-
-пройдите по ссылке
-
-http://127.0.0.1:8000/docs/
 
 **Используемые технологии**
 
