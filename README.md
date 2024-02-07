@@ -16,6 +16,7 @@ Docker
 https://github.com/Wowa-Py/API-mailing-management-service.git
 
 **Перейдите в директорию проекта:**
+
 cd service
 
 cd maillind
