@@ -17,4 +17,4 @@ RUN pip install -r requirements.txt
 
 
 # Запускаем Redis
-CMD redis-server --daemonize yes && python manage.py runserver 0.0.0.0:8000
+CMD redis-server --daemonize yes && python3 manage.py runserver 0.0.0.0:8000
