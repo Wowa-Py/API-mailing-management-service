@@ -15,13 +15,7 @@ Docker
 **Клонируйте репозиторий проекта:**
 https://github.com/Wowa-Py/API-mailing-management-service.git
 
-**Перейдите в директорию проекта:**
-
-cd service
-
-cd maillind
-
-**Создайте файл .env в корневой директории проекта и укажите необходимые переменные окружения:**
+**Создайте файл .env в корневой директории проекта и укажите необходимые переменные окружения(в дальнейшем это обеспечит безопасное хранение данных; убедитесь что данный файл добавлен в .gitignore):**
 SECRET_KEY=your_secret_key
 
 DEBUG=True
@@ -52,6 +46,23 @@ docker-compose exec web python manage.py createsuperuser
 **Чтобы остановить проект, выполните следующую команду:**
 
 docker-compose down
+
+**Запуск локально:**
+**Перейдите в директорию проекта:**
+
+cd service
+
+cd maillind
+
+Введите команду в терминале:
+
+python3 manage.py runserver
+
+(либо py manage.py runserver)
+
+пройдите по ссылке
+
+http://127.0.0.1:8000
 
 **Используемые технологии**
 
