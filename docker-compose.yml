@@ -28,4 +28,4 @@ services:
       - .:/mailling
     depends_on:
       - db
-    command: celery -A your_project_name worker --loglevel=info
+    command: celery -A services worker --loglevel=info
