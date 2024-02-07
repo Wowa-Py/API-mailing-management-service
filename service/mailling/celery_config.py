@@ -4,10 +4,10 @@ import time
 from celery import Celery
 
 # Переменная окружения для настроек Celery
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'your_project_name.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'maillind.settings')
 
 # Экземпляр Celery
-app = Celery('your_project_name')
+app = Celery('maillind')
 
 # Загрузка настроек из файла settings.py
 app.config_from_object('django.conf:settings', namespace='CELERY')
