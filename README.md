@@ -13,9 +13,11 @@ Docker
 
 
 **Клонируйте репозиторий проекта:**
+
 https://github.com/Wowa-Py/API-mailing-management-service.git
 
 **Создайте файл .env в корневой директории проекта и укажите необходимые переменные окружения(в дальнейшем это обеспечит безопасное хранение данных; убедитесь что данный файл добавлен в .gitignore):**
+
 SECRET_KEY=your_secret_key
 
 DEBUG=True
@@ -31,21 +33,29 @@ DB_HOST=db
 DB_PORT=5432
 
 **Запустите проект с помощью Docker Compose:**
+
 docker-compose up -d --build
 
 **Примените миграции базы данных:**
+
 docker-compose exec web python manage.py migrate
 
 **Создайте суперпользователя:**
+
 docker-compose exec web python manage.py createsuperuser
 
-**Откройте веб-браузер и перейдите по адресу** http://127.0.0.1:8000//admin/ **для доступа к административной панели.**
+**Откройте веб-браузер и перейдите по адресу** 
 
-**Документация по API доступна по адресу** http://127.0.0.1:8000/docs/.
+http://127.0.0.1:8000//admin/ **для доступа к административной панели.**
+
+**Документация по API доступна по адресу** 
+
+http://127.0.0.1:8000/docs/.
 
 **Чтобы остановить проект, выполните следующую команду:**
 
 docker-compose down
+
 
 **Запуск локально:**
 **Перейдите в директорию проекта:**
@@ -54,11 +64,12 @@ cd service
 
 cd maillind
 
+
 Введите команду в терминале:
 
 python3 manage.py runserver
 
-(либо py manage.py runserver)
+(либо: py manage.py runserver)
 
 пройдите по ссылке
 
