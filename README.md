@@ -35,10 +35,7 @@ DB_PORT=5432
 
 **Перейдите в директорию проекта:**
 
-cd service
-
-cd maillind
-
+cd API-mailing-management-service
 
 **Запустите проект с помощью Docker Compose:**
 
