@@ -10,6 +10,9 @@ COPY . .
 # Копируем файл requirements.txt в контейнер
 # COPY requirements.txt .
 
+# Создадим пользователя в системе
+RUN adduser --disabled-password service-user
+
 # Установите зависимости
 RUN pip install --upgrade pip
 
