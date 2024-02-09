@@ -18,6 +18,7 @@ RUN pip install --upgrade pip
 
 RUN pip install -r requirements.txt
 
+USER service-user
 
 # Запускаем Redis
 CMD redis-server --daemonize yes && python3 manage.py runserver 0.0.0.0:8000
